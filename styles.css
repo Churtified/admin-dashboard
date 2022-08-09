@@ -3,3 +3,18 @@
     margin: 0px;
     padding: 0px;
 }
+
+body {
+    display: flex;
+}
+
+right-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.your-projects-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
