@@ -5,16 +5,83 @@
 }
 
 body {
-    display: flex;
-}
-
-right-container {
-    display: flex;
-    flex-direction: column;
-}
-
-.your-projects-container {
+    height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    'nav header header header header'
+    'nav main main main main'
+    'nav main main main main'
+    'nav main main main main'
+    'nav main main main main'
+    'nav main main main main'
+}
+
+nav {
+    grid-area: nav;
+}
+
+.dashboard-title {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+}
+
+.nav-list {
+    margin-left: 20px;
+    list-style-type: none;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 2fr 1fr 1fr 1fr;
+}
+
+header {
+    grid-area: header;
+}
+
+.header-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.search-bar-container {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.user-profile {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.welcome-container {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.button-container {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-areas:
+    'project project announcements'
+    'project project announcements'
+    'project project trending'
+    'project project trending'
+}
+
+.your-projects {
+    grid-area: project;
+}
+
+.announcements {
+    grid-area: announcements;
+}
+
+.trending {
+    grid-area: trending;
 }
