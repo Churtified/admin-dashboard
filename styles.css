@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -71,7 +72,8 @@ main {
     'project project announcements'
     'project project announcements'
     'project project trending'
-    'project project trending'
+    'project project trending';
+    background-color: #cbd5e1;
 }
 
 .your-projects {
@@ -90,4 +92,43 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    height: 100vh;
+}
+
+.your-projects-title {
+    padding: 20px 10px 10px 10px;
+}
+
+.project-cards {
+    border: steelblue 1px solid;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.announcements-title {
+    padding: 20px 10px 10px 10px;
+}
+
+.announcement-cards {
+    border: steelblue 1px solid;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    height: 50vh;
+    width: 30vh;
+}
+
+.trending-title {
+    padding: 20px 10px 10px 10px;
+}
+
+.trending-cards {
+    border: steelblue 1px solid;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    height: 30vh;
+    width: 30vh;
 }
